@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: #989b46;
+        }
+
+        p {
+            color: #554c0e;
+            font-size: 18px;
+        }
+
+        a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .topo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            /*tudo começa da esquerda */
+            gap: 60px;
+        }
+
+        /*empurra a foto mais pro centro*/
+        .topo img {
+            width: 100%;
+            /* aumenta aqui */
+            height: auto;
+            /* mantém proporção */
+            border-radius: 50%;
+        }
+
+        .secao {
+            width: 100%;
+            max-width: 800px;
+        }
+
+
+        image {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <h2 class="titulo">Informações de Contato</h2>
+    <p type="color: #554c0e;">As informações devem ser preenchidas no formulário abaixo:</p>
+    <form action="dudasouzasr@gmail.com" method="post"></form>
+    <label for="Nome">Nome completo</label>
+    <input type="text" name="nome_cliente" size="100" placeholder="Digite seu nome completo" required>
+    <br>
+    <br>
+    <label for="Telefone">Telefone</label>
+    <input type="tel" name="telefone_cliente" placeholder="Digite seu telefone" required>
+    <br>
+    <br>
+    <label for="E-mail:">E-mail</label>
+    <input type="email" name="email_cliente" placeholder="Digite seu e-mail" required>
+    <br>
+    <br>
+    <label for="Tipo de cliente" required>Tipo de cliente</label>
+    <select name="tipo_pessoa">
+        <option value="física">Pessoa física</option>
+        <option value="jurídica">Pessoa jurídica</option>
+    </select>
+    <br>
+    <br>
+    <label for="Serviço desejado" required></label>
+    <input type="checkbox">Site simples
+    <input type="checkbox">Site dinâmico
+    <input type="checkbox">Site Avançados
+    <br>
+    <br>
+    <label for="Horário para contato"></label>
+    <select name="horário_contato" size="1" required>
+        <option value="">Selecione</option>
+        <option value="Manhã">Manhã</option>
+        <option value="Tarde">Tarde</option>
+        <option value="Noite">Noite</option>
+    </select>
+    <br>
+    <br>
+    <textarea name="Descrição" cols="245" rows="15" placeholder="Descreva seu projeto"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    <br>
+    <br>
+    <br>
+    <a href="../index.html">Página principal</a>
+</body>
+
+</body>
+</html>
